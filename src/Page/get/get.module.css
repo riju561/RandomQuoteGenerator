@@ -1,0 +1,26 @@
+.div{
+    margin-top: 50px;
+    padding: 0 50px;
+    position: relative;
+}
+.quote{
+    font-size: 2.5rem;
+    font-family: 'Dancing Script', cursive !important;
+}
+.auth{
+    font-size: 2.5rem;
+}
+.button{
+    margin-top: 50px;
+    border: none;
+    padding:5px 35px;
+    font-size:1.5rem;
+    border-radius:30px ;
+    background-color:#023047;
+    color: #fb8500;
+    transition: 200ms;
+}
+.button:hover{
+    box-shadow: 0 0 30px rgba(0,0,0,0.50);
+    transform: scale(1.2);
+}
