@@ -1,3 +1,12 @@
+# Random Quote Generator
+
+This site displays the user a random quote taken from the database and has the option to post a quote
+To start the project run `npm run dev` in the project directory
+You will need to change the database directory in package.json
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
