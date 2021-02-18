@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "nodemon server/index.js",
-    "db": "/users/91981/MongoDB/bin/mongod.exe --dbpath=/users/91981/MongoDB-data",
+    "db": "C:/users/91981/MongoDB/bin/mongod.exe --dbpath=C:/users/91981/MongoDB-data",
     "dev": "concurrently --kill-others-on-fail \"npm run db\" \"npm run server\" \"npm run start\""
   },
   "eslintConfig": {
@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "nodemon": "^2.0.7"
   }
 }

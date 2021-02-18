@@ -5,7 +5,7 @@ import styles from './get.module.css';
 const Get=()=>{
     const [msg, setMsg] = useState(null);
     const [data, setData] = useState(null);
-    const refreshHandler = () => {
+    const getHandler = () => {
         setData(null);
         setMsg(null);
         axios.get('http://localhost:5000/quotes')
@@ -19,7 +19,7 @@ const Get=()=>{
             });;
     }
     useEffect(() => {
-        refreshHandler()
+        getHandler()
     }, [])
     return(
         <div className={styles.div}>
@@ -28,7 +28,7 @@ const Get=()=>{
                 <p className={styles.quote}>{data['quote']}</p>
                 <p className={styles.auth}>- {data['author']}</p>
                 <div className={styles.bd}>
-                <button onClick={refreshHandler} className={styles.button}>Get another Quote</button>
+                <button onClick={getHandler} className={styles.button}>Get another Quote</button>
                 </div>
             </div> : msg ? 
             <div>
