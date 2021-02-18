@@ -10,8 +10,10 @@ const Main = () => {
             <h1 className={styles.heading}>Random Quote Generator</h1>
             <div className={styles.div}>
                 <div className={styles.card}>
-                    <div className={state ? styles.tab : styles.tab + " " + styles.active} onClick={() => setState(false)}>Get Quote</div>
-                    <div className={state ? styles.tab + " " + styles.active : styles.tab} onClick={() => setState(true)}>Post Quote</div>
+                    <div className={styles.t}>
+                        <div className={state ? styles.tab : styles.tab + " " + styles.active} onClick={() => setState(false)}>Get Quote</div>
+                        <div className={state ? styles.tab + " " + styles.active : styles.tab} onClick={() => setState(true)}>Post Quote</div>
+                    </div>
                     <div className={styles.content}>
                         {state ? <Post /> : <Get />}
                     </div>
