@@ -1,9 +1,8 @@
 # Random Quote Generator
 
-This site displays the user a random quote taken from the database and has the option to post a quote
-To start the project run `npm run dev` in the project directory
-You will need to change the database directory in package.json
-
+This site displays the user a random quote taken from the database and has the option to post a quote.<br/>
+To start the project run `npm run dev` in the project directory<br/>
+You will need to change the database directory in package.json<br/>
 
 
 
